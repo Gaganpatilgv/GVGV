@@ -6,3 +6,72 @@ good afternoon
 good evening 
 good night 
 so always bye
+lab8
+git init 
+hello1
+git add .,git commit -m "hello1 commit"
+hello2
+________________________"hello2________"
+hello3
+_________________________"hello3 commit"
+git branch source-branch
+git checkout source-branch
+git status
+hell4
+__________________________"hello4 commit"
+hello5
+___________________________"hello5 commit"
+hello 6
+____________________________"hello6 commit"
+git checkout master
+hello7
+_____________________________"hello7 commit"
+git log source-branch --oneline
+git cherry-pick middle copy
+git ___________last first copy
+git log --1line
+
+
+lab2
+git init
+hello1
+git add .,git commit -m "hello1 commit1"
+edit
+________________________"_____1________2"
+hello2
+_________________________"_____2________3"
+edit
+__________________________"_____2_________4"
+git branch feature-branch
+git status 
+git checkout feature-branch
+fb1 fb2 same
+git checkout master
+git status
+git merge feature-branch -m"merged"
+git log --all --graph
+
+
+lab3
+hello
+git add .,git commit -m "master commit1"
+edit __________________________________2"
+_______________________________________3"
+hello1
+git status
+git stash -m "stased newfile1"
+git status
+git stash list
+git branch fb
+git checkout fb
+git  stash pop0
+git commit -m "this is fb commit 1"
+git checkout master
+
+
+
+
+lab10
+git log --author "gagan" --since "2024-1 22"
+--until "2024-1-27"
+
