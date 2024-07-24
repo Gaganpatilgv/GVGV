@@ -75,3 +75,178 @@
 \end{center}
 
 \end{document}
+
+Program 9
+
+\documentclass{article} 
+\usepackage[numbers]{natbib} % Use the 'natbib' package for citation management 
+\begin{document} 
+\title{Document that Consists of Two Paragraphs with a minimum of 10 Citations in it and 
+Displaying the References in the Section} 
+\date{} 
+\maketitle 
+% Write two paragraphs with at least 10 citations 
+\paragraph{Paragraph 1} 
+The theory of relativity has been explored extensively in various scientific papers 
+\citep{author1, author2, author3}. Einstein's contributions to physics are profound and have 
+paved the way for many modern discoveries \citep{author4, author5}. Researchers continue to 
+investigate the complexities of spacetime and the universe \citep{author6, author7}. These 
+advancements have led to new methods of measurement and analysis in cosmology 
+\citep{author8}. 
+\paragraph{Paragraph 2} 
+Recent studies have focused on the impact of climate change on various ecosystems 
+\citep{author9, author10}. Scientists are examining how rising temperatures and changing 
+weather patterns affect biodiversity and human health \citep{author11, author12}. 
+Furthermore, interdisciplinary research has brought about innovative solutions for sustainable 
+development \citep{author13}. Collaboration among experts from different fields is essential 
+to address the challenges of global warming \citep{author14}. 
+% Add a references section 
+\newpage % Optional: Start the references on a new page 
+\begin{thebibliography}{99} 
+\bibitem{author1} Author One. \textit{Title of Article One}. Journal Name, vol. 10, no. 1, pp. 
+1--10, 2022. 
+\bibitem{author2} Author Two. \textit{Title of Book Two}. Publisher Name, 2021. 
+\bibitem{author3} Author Three. \textit{Title of Conference Paper Three}. In: Proceedings of 
+Conference, pp. 100--110, 2020. 
+\bibitem{author4} Author Four. \textit{Title of Article Four}. Journal Name, vol. 9, no. 2, pp. 
+15--25, 2019. 
+\bibitem{author5} Author Five. \textit{Title of Book Five}. Publisher Name, 2018. 
+\bibitem{author6} Author Six. \textit{Title of Conference Paper Six}. In: Proceedings of 
+Conference, pp. 200--210, 2017. 
+\bibitem{author7} Author Seven. \textit{Title of Article Seven}. Journal Name, vol. 8, no. 3, 
+pp. 30--40, 2016. 
+\bibitem{author8} Author Eight. \textit{Title of Book Eight}. Publisher Name, 2015. 
+\bibitem{author9} Author Nine. \textit{Title of Conference Paper Nine}. In: Proceedings of 
+Conference, pp. 300--310, 2014. 
+\bibitem{author10} Author Ten. \textit{Title of Article Ten}. Journal Name, vol. 7, no. 4, pp. 
+50--60, 2013. 
+18 
+\bibitem{author11} Author Eleven. \textit{Title of Article Eleven}. Journal Name, vol. 6, no. 
+5, pp. 70--80, 2012. 
+\bibitem{author12} Author Twelve. \textit{Title of Article Twelve}. Journal Name, vol. 5, no. 
+6, pp. 90--100, 2011. 
+\bibitem{author13} Author Thirteen. \textit{Title of Book Thirteen}. Publisher Name, 2010. 
+\bibitem{author14} Author Fourteen. \textit{Title of Conference Paper Fourteen}. In: 
+Proceedings of Conference, pp. 400--410, 2009. 
+\end{thebibliography} 
+\end{document}
+
+Program 8
+\documentclass{article} 
+\usepackage{amsthm} 
+% Define theorem-like environments 
+\newtheorem{theorem}{Theorem} 
+\newtheorem{definition}{Definition} 
+\newtheorem{corollary}{Corollary} 
+\newtheorem{lemma}{Lemma} 
+\begin{document} 
+\title{Numbered Theorems, Definitions, Corollaries, and Lemmas in the Document} 
+\date{} 
+\maketitle 
+\begin{theorem} 
+(Pythagorean Theorem) In a right-angled triangle, the square of the length of the hypotenuse 
+is equal to the sum of the squares of the lengths of the other two sides.  
+\begin{equation} 
+a^2 + b^2 = c^2 
+\end{equation} 
+\end{theorem} 
+% Presenting a definition with an example 
+\begin{definition} 
+(Prime Number) A prime number is a natural number greater than 1 that is not divisible by 
+any number other than 1 and itself. 
+\begin{itemize} 
+\item Example: 2, 3, 5, and 7 are prime numbers. 
+\end{itemize} 
+\end{definition} 
+% Presenting a corollary with an example 
+\begin{corollary} 
+(Euclid's Corollary) There are infinitely many prime numbers. 
+\begin{itemize} 
+\item Proof: Assume there are finitely many primes. Let them be $p_1, p_2, \ldots, p_n$. 
+Consider the number $N = p_1 \cdot p_2 \cdots p_n + 1$. 
+This number is not divisible by any of the primes $p_1$ through $p_n$. 
+Therefore, there must be a prime factor not in the list, contradicting the assumption that there 
+are only finitely many primes. 
+\end{itemize} 
+\end{corollary} 
+% Presenting a lemma with an example 
+\begin{lemma} 
+(Basic Arithmetic Identity) For any real numbers $a$ and $b$, we have: 
+16 
+17 
+ 
+\begin{equation} 
+(a + b)^2 = a^2 + 2ab + b^2. 
+\end{equation} 
+\end{lemma} 
+ 
+\end{document}
+
+PROGRAM 7
+\documentclass{article}
+\usepackage{amsmath} % Required for mathematical environments and symbols
+
+\begin{document}
+\title{Following Two Mathematical Equations}
+\date{}
+\maketitle
+
+% Use the 'align' environment to align equations properly
+\[
+\begin{aligned}
+% Left side: equations about 'x'
+& \begin{aligned}
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \\
+&= \frac{-2 \pm \sqrt{2^2 - 4 \cdot 1 \cdot (-8)}}{2 \cdot 1} \\
+&= \frac{-2 \pm \sqrt{4 + 32}}{2}
+\end{aligned}
+\quad
+% Add horizontal space between left and right sides
+&
+% Right side: equations about '\varphi_{\sigma}^{\lambda} A_{t}'
+\begin{aligned}
+\varphi_{\sigma}^{\lambda} A_{t} &= \sum_{\pi \in C_{t}} \operatorname{sgn}(\pi) \varphi_{\sigma}^{\lambda} \varphi_{\pi}^{\lambda} \\
+&= \sum_{\tau \in C_{\sigma t}} \operatorname{sgn}(\sigma^{-1} \tau \sigma) \varphi_{\sigma}^{\lambda} \varphi_{\varphi^{-1} \tau \sigma}^{\lambda} \\
+&= A_{\sigma t} \varphi_{\sigma}^{\lambda}
+\end{aligned}
+\end{aligned}
+\]
+\end{document}
+
+PROGRAM  6
+\documentclass{article} 
+\usepackage{graphicx} 
+\usepackage{subcaption}% For side-by-side 
+\begin{document} 
+\textbf{\huge Side-by-Side Subgraphs} 
+\begin{figure}[ht] 
+\subfloat[Cover Audio plot]
+{ 
+\begin{minipage}[c][1\width]
+{0.3\textwidth} 
+\centering 
+\includegraphics[width=1\textwidth]{Cover.png} 
+\end{minipage}
+}
+\hfill  
+\subfloat[Secret Audio plot]
+{ 
+\begin{minipage}[c][1\width]
+{0.3\textwidth} 
+\centering 
+\includegraphics[width=1\textwidth]{Secrert.png} 
+\end{minipage}
+} 
+\hfill  
+\subfloat[Stego]
+{ 
+\begin{minipage}[c][1\width]
+{0.3\textwidth} 
+\centering 
+\includegraphics[width=1\textwidth]{Stego.png} 
+\end{minipage}
+} 
+\caption{Audio steganography plots} 
+\end{figure} 
+\end{document}
+
