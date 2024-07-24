@@ -34,7 +34,7 @@
 
 \end{document}
 
-12
+10
 \documentclass{article}
 
 % Import the 'tikz' package for creating diagrams
@@ -250,3 +250,76 @@ PROGRAM  6
 \end{figure} 
 \end{document}
 
+5. Develop a LaTeX script to create a document that contains the following table with proper label
+ \documentclass[10pt, a4paper]farticle} \usepackage(utf8]finputenc} \usepackage{amsmath} \usepackage{amsfonts} \usepackage{amssymb}
+ \usepackage[left=2cm, right=2cm,top=2cm, bottom=2cm)(geometry} \usepackage{multirow} \begin{document} \begin{center) \begințLarge)
+ \textbf{Table: Students Details of 4th semester CSE} \end{Large} \end{center} \section*{Marks Details) \begin{tabular{| c| c|clc|clc|c|} \hline
+ \multirow{2}{*HS.No} & \multirow(2}{*HUSN} & \multirow(2{*}{Student Name} & \multicolumn{4}Hc|HMarks} \\ \cline{4-7}
+ & & & MATHS & ADA & Subject3 & Subject 4\| \hline
+ 1& 1SJXXCS001 & ABC 1 & 45 & 77 & 97 &58 \\ \hline
+ 2 & 1SJXXCS002 & Name 2 & 74 & 78 & 66 &88\\ \hline
+ 3& 1SJXXCSO03 & Name 3 & 88 & 82 & 79 &95\\ \hline \end{tabular} \end{document}
+
+4. Develop a LaTeX script to create the Certificate Page of the Report [Use suitable commands to leave the blank spaces for user entry]
+
+\documentclass[a4paper]{article}
+\usepackage{tcolorbox}
+\usepackage[dvisvgm, usenames, dvipsnames]{color}
+\begin{document}
+\begin{titlepage}
+\begin{tcolorbox}[colframe=black, colback=white, boxrule=2pt, arc=0pt, outer arc=0pt]
+\begin{center}
+\vspace{1cm}
+\textbf\Large{JNN COLLEGE OF ENGINEERING \\[7pt]
+NAVULE SHIVAMOGGA \\ [7pt]
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING\\
+}
+\vspace{1cm}
+\includegraphics[width=0.3\textwidth]{bulogo.jpg}
+\vspace{1cm}
+\textbf{\underline{CERTIFICATE}}
+\end{center}
+\doublespacing
+This is to certify that \textbf{\color{darkblue}XYZ} has submitted the Dissertation Phase 2 Report on \textbf{\color{darkblue}"OntoCopy: Copyright Ontology on Indian Court Judgements for Case Summarisation”} for the fulfillment of \textbf{IV semester Computer Science and Engineering}, with a Master’s in Information Technology prescribed by the \textbf{VISVESVARAYA TECHNOLOGICAL ERSITY} for the academic year 2023-2024. The Dissertation report has been approved as it satisfies the academic requirements in respect of work guidelines prescribed for the said degree.
+\vspace{2cm}
+\noindent % Prevent indentation
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}[t]{@{}c}
+\rule{10em}{0.4pt}\\
+\textbf{Mrs. Sushma R B,} \\
+Assisstant Professor \& Guide, \\
+Department of CSE, \\
+JNNCE, Shivamogga.\\
+\end{tabular}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+\begin{tabular}[t]{@{}c}
+\rule{10em}{0.4pt}\\
+\textbf{Dr. Manjula G R,} \\
+Professor \& Chairperson, \\
+Department of CSE, \\
+JNNCE Shivamogga.\\
+\end{tabular}
+\end{flushright}
+\end{minipage}
+10
+\vspace{1.5cm}
+\noindent % Prevent indentation
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}[t]{@{}c}
+\rule{10em}{0.4pt}\\
+\textbf{Examiner 1} \\
+\end{tabular}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+\begin{tabular}[t]{@{}c}
+\rule{10em}{0.4pt}\\
+\textbf{Examiner 2} \\
+\end{tabular}
+\end{flushright}
+\end{minipage}
+\end{tcolorbox}
+\end{titlepage}
+\end{document}
