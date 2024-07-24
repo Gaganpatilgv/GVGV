@@ -1,77 +1,77 @@
-hi 
-hello
-everyone
-good morning
-good afternoon
-good evening 
-good night 
-so always bye
-lab8
-git init 
-hello1
-git add .,git commit -m "hello1 commit"
-hello2
-________________________"hello2________"
-hello3
-_________________________"hello3 commit"
-git branch source-branch
-git checkout source-branch
-git status
-hell4
-__________________________"hello4 commit"
-hello5
-___________________________"hello5 commit"
-hello 6
-____________________________"hello6 commit"
-git checkout master
-hello7
-_____________________________"hello7 commit"
-git log source-branch --oneline
-git cherry-pick middle copy
-git ___________last first copy
-git log --1line
+11
+\documentclass{article}
+\usepackage[ruled, linesnumbered]{algorithm2e}
 
+\begin{document}
 
-lab2
-git init
-hello1
-git add .,git commit -m "hello1 commit1"
-edit
-________________________"_____1________2"
-hello2
-_________________________"_____2________3"
-edit
-__________________________"_____2_________4"
-git branch feature-branch
-git status 
-git checkout feature-branch
-fb1 fb2 same
-git checkout master
-git status
-git merge feature-branch -m"merged"
-git log --all --graph
+\begin{algorithm} [H]
+\SetAlgoLined
+\SetKwFunction{Dijkstra}{Dijkstra}
+\SetKwProg{Fn}{Function}{:}{}
+\Fn{\Dijkstra{$G, s$}}{
+    $d[s] \gets 0$; \\
+    \ForEach{$v \in V$}{
+        $d[v] \gets \infty$; \\
+        $prev[v] \gets undefined$;
+    }
+    $Q \gets V$; \\
+    \While{$Q$ is not empty}{
+        $u \gets$ vertex in $Q$ with minimum $d[u]$; \\
+        Remove $u$ from $Q$; \\
+        \ForEach{$v \in$ neighbors of $u$}{
+            $alt \gets d[u] + \mathrm{weight}(u, v)$; \\
+            \If{$alt < d[v]$}{
+                $d[v] \gets alt$; \\
+                $prev[v] \gets u$;
+            }
+        }
+    }
+    \KwRet{$d[], prev[]$};
+}
+\caption{Dijkstra's Algorithm}
+\label{algo:dijkstra}
+\end{algorithm}
 
+\end{document}
 
-lab3
-hello
-git add .,git commit -m "master commit1"
-edit __________________________________2"
-_______________________________________3"
-hello1
-git status
-git stash -m "stased newfile1"
-git status
-git stash list
-git branch fb
-git checkout fb
-git  stash pop0
-git commit -m "this is fb commit 1"
-git checkout master
+12
+\documentclass{article}
 
+% Import the 'tikz' package for creating diagrams
+\usepackage{tikz}
+\usetikzlibrary{trees}
 
+\begin{document}
 
+\title{Simple Tree Diagram or Hierarchical Structure in the Document with appropriate Labels using the Tikz Library}
+\date{}
+\maketitle
 
-lab10
-git log --author "gagan" --since "2024-1 22"
---until "2024-1-27"
+% Create a tree diagram
+% Wrap the TikZ picture in a 'center' environment to center the diagram
+\begin{center}
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=7cm},
+  level 2/.style={sibling distance=4cm},
+  level distance=2cm,
+  every node/.style={font=\large} % Increase font size here (e.g. \large, \Large)
+]
 
+% Root node
+\node {Root}
+  % Level 1 nodes
+  child { node {Child 1}
+    % Level 2 nodes
+    child { node {Grandchild 1.1} }
+    child { node {Grandchild 1.2} }
+  }
+  child { node {Child 2}
+    % Level 2 nodes
+    child { node {Grandchild 2.1} }
+    child { node {Grandchild 2.2} }
+  };
+
+\end{tikzpicture}
+\end{center}
+
+\end{document}
